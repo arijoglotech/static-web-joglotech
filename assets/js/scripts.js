@@ -101,12 +101,34 @@
     });
   }
 
+  function workPopup(){
+    $('.work-container').each(function () {
+      $(this).magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        removalDelay: 100,
+        gallery: {
+          enabled: true
+        },
+        callbacks: {
+          beforeOpen: function () {
+            this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+            this.st.mainClass = this.st.el.attr('data-effect');
+          }
+        },
+        closeOnContentClick: true,
+        midClick: true
+      });
+    });
+  }
+
   jQuery(function () {
     ctaBox();
     scrollSpyCustom();
     smoothScrollSection();
     headerShrink();
     teamCarousel();
+    workPopup();
   });
 
 })(jQuery, window, document);
