@@ -270,12 +270,26 @@ header {
   -ms-flex-align: center;
       align-items: center; }
 
+.service .service-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  margin-left: -15px;
+  margin-right: -15px; }
+
 .service .service-card {
   border-radius: 40px;
   padding: 40px 30px;
   box-shadow: 0px 10px 28px 0px rgba(0, 0, 0, 0.08);
   text-align: center;
-  margin-bottom: 30px; }
+  margin: 15px;
+  -ms-flex: 0 1 calc(100% - 30px);
+      flex: 0 1 calc(100% - 30px); }
   .service .service-card h4 {
     font-size: 20px;
     font-weight: 700;
@@ -365,7 +379,6 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 30px;
     margin: 15px;
     -ms-flex: 0 1 calc(100% - 30px);
         flex: 0 1 calc(100% - 30px);
@@ -662,6 +675,12 @@ footer {
     max-height: 752px;
     margin-top: -282px;
     left: -50%; }
+  .service .service-container {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .service .service-card {
+    -ms-flex: 0 1 calc(50% - 30px);
+        flex: 0 1 calc(50% - 30px); }
   .btn--jtech.btn--lg {
     height: 60px;
     border-radius: 30px;
@@ -765,6 +784,14 @@ footer {
     max-height: 705px;
     margin-top: -352.5px;
     left: 0; }
+  .service .service-container {
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .service .service-card:first-child {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(50%);
+        transform: translateY(50%); }
   .team .team-container {
     padding: 0 40px; }
   .team:after {
