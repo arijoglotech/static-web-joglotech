@@ -32,7 +32,6 @@
     jQuery(window).scroll(function () {
       // Get container scroll position
       var fromTop = jQuery(this).scrollTop() + mainNavHeight;
-
       // Get id of current scroll item
       var cur = scrollItems.map(function () {
         if (jQuery(this).offset().top < fromTop)
