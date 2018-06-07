@@ -13,11 +13,11 @@ body, html {
   color: #1d262f; }
 
 section {
-  position: relative;
-  padding: 60px 0; }
+  padding: 60px 0;
+  position: relative; }
   section h3 {
-    font-size: 32px;
     color: #1d262f;
+    font-size: 32px;
     font-weight: 700;
     padding: 0;
     margin-bottom: 20px; }
@@ -32,15 +32,15 @@ section {
         left: 0;
         right: 0; }
   section p.lead {
-    font-size: 18px;
     color: #9fa4a8;
+    font-size: 18px;
     font-weight: 300;
     line-height: 200%; }
 
 header {
+  height: 120px;
   padding-left: 15px;
   padding-right: 15px;
-  height: 120px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -58,7 +58,6 @@ header {
   padding: 0;
   margin: 0;
   font-size: 0;
-  margin-left: 40px;
   display: none; }
   .main-nav li {
     font-size: 16px;
@@ -74,7 +73,7 @@ header {
     .main-nav li.active > a,
     .main-nav li.active:hover > a {
       color: #1d262f;
-      border-bottom: 2px solid #f15a39; }
+      box-shadow: inset 0px -2px 0px 0px #f15a39; }
 
 .hero {
   display: -ms-flexbox;
@@ -283,13 +282,13 @@ header {
   margin-right: -15px; }
 
 .service .service-card {
+  -ms-flex: 0 1 calc(100% - 30px);
+      flex: 0 1 calc(100% - 30px);
   border-radius: 40px;
   padding: 40px 30px;
   box-shadow: 0px 10px 28px 0px rgba(0, 0, 0, 0.08);
   text-align: center;
-  margin: 15px;
-  -ms-flex: 0 1 calc(100% - 30px);
-      flex: 0 1 calc(100% - 30px); }
+  margin: 15px; }
   .service .service-card h4 {
     font-size: 20px;
     font-weight: 700;
@@ -596,8 +595,8 @@ footer {
 .custom-select,
 .form-control {
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
   border-color: #eaeaea;
+  font-weight: normal;
   height: 50px;
   border-radius: 8px;
   border-width: 2px;
@@ -649,6 +648,10 @@ footer {
     font-size: 14px; } }
 
 @media only screen and (min-width: 768px) {
+  .btn--jtech.btn--lg {
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px; }
   header {
     padding-left: 30px;
     padding-right: 30px; }
@@ -661,15 +664,6 @@ footer {
       right: -68%; }
     .hero h1 {
       margin-top: 30px; }
-  footer .logo-bottom {
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    margin-top: -22px;
-    margin-bottom: auto;
-    z-index: 2; }
-  .contact .contact-form .form-group {
-    margin-bottom: 30px; }
   .macbook {
     display: block;
     max-height: 752px;
@@ -681,10 +675,15 @@ footer {
   .service .service-card {
     -ms-flex: 0 1 calc(50% - 30px);
         flex: 0 1 calc(50% - 30px); }
-  .btn--jtech.btn--lg {
-    height: 60px;
-    border-radius: 30px;
-    font-size: 16px; } }
+  .contact .contact-form .form-group {
+    margin-bottom: 30px; }
+  footer .logo-bottom {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -22px;
+    margin-bottom: auto;
+    z-index: 2; } }
 
 @media only screen and (min-width: 1024px) {
   header {
@@ -715,6 +714,7 @@ footer {
     section p.lead {
       font-size: 22px; }
   .main-nav {
+    margin-left: 40px;
     display: -ms-flexbox;
     display: flex; }
   .hero {

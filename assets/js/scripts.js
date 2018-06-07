@@ -81,6 +81,10 @@
       dots: false,
       stagePadding: 15,
       margin: 30,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 500,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 2,
