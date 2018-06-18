@@ -104,7 +104,8 @@ header {
     font-size: 20px; }
   .hero .btn-cta-hero {
     padding-right: 70px;
-    position: relative; }
+    position: relative;
+    display: none; }
     .hero .btn-cta-hero .icon {
       width: 40px;
       height: 40px;
@@ -626,20 +627,19 @@ footer {
     right: -94%; } }
 
 @media only screen and (min-width: 480px) {
+  .btn--jtech.btn--lg {
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px; }
   .hero:after {
     width: 400px;
     border-radius: 100px;
     top: -550px;
     right: -78%; }
-  .hero-img img {
-    max-width: 100%; }
+  .hero-img {
+    padding-bottom: 50px; }
   .circle-pernik:not(:nth-child) {
     left: -30px !important; }
-  .cross-pernik:nth-child(6) {
-    background: #ffffff;
-    right: -40px; }
-    .cross-pernik:nth-child(6):after {
-      background: #ffffff; }
   .work .work-container .work-thumbnail {
     -ms-flex: 0 1 calc(50% - 30px);
         flex: 0 1 calc(50% - 30px); }
@@ -647,10 +647,6 @@ footer {
     font-size: 14px; } }
 
 @media only screen and (min-width: 768px) {
-  .btn--jtech.btn--lg {
-    height: 60px;
-    border-radius: 30px;
-    font-size: 16px; }
   header {
     padding-left: 30px;
     padding-right: 30px; }
@@ -663,6 +659,17 @@ footer {
       right: -68%; }
     .hero h1 {
       margin-top: 30px; }
+    .hero .btn-cta-hero {
+      display: block; }
+  .hero-img {
+    padding-bottom: 0; }
+    .hero-img img {
+      max-width: 100%; }
+  .cross-pernik:nth-child(6) {
+    background: #ffffff;
+    right: -40px; }
+    .cross-pernik:nth-child(6):after {
+      background: #ffffff; }
   .macbook {
     display: block;
     max-height: 752px;
